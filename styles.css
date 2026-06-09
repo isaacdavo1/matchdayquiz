@@ -1702,6 +1702,25 @@ a.category-card {
   max-width: 320px;
 }
 
+.home-quiz-cta__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+  max-width: 320px;
+}
+
+.home-quiz-cta .btn--outline {
+  color: var(--text-primary);
+  border-color: var(--border-hover);
+}
+
+.home-quiz-cta .btn--outline:hover {
+  border-color: var(--accent-green);
+  color: var(--accent-green);
+  background: rgba(34, 197, 94, 0.08);
+}
+
 @media (min-width: 768px) {
   .home-quiz-cta__card {
     flex-direction: row;
@@ -1714,10 +1733,15 @@ a.category-card {
     margin: 0;
   }
 
-  .home-quiz-cta__btn {
+  .home-quiz-cta__actions {
     flex-shrink: 0;
     width: auto;
     max-width: none;
+  }
+
+  .home-quiz-cta__btn {
+    width: 100%;
+    min-width: 200px;
   }
 }
 
