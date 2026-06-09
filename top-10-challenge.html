@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Top 10 Challenge — can you name all ten? Test your English football knowledge.">
+  <meta name="theme-color" content="#0a0f1a">
+  <title>Top 10 Challenge — Football Quiz UK</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-quiz">
+  <div class="bg-pattern" aria-hidden="true"></div>
+
+  <header class="header header--minimal">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">
+        <span class="logo__icon" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M16 4L20 12L16 16L12 12L16 4Z" fill="currentColor" opacity="0.9"/>
+            <path d="M4 16L12 12L16 16L12 20L4 16Z" fill="currentColor" opacity="0.6"/>
+            <path d="M16 28L12 20L16 16L20 20L16 28Z" fill="currentColor" opacity="0.9"/>
+            <path d="M28 16L20 20L16 16L20 12L28 16Z" fill="currentColor" opacity="0.6"/>
+          </svg>
+        </span>
+        <span class="logo__text">Football Quiz UK</span>
+      </a>
+      <a href="index.html" class="quiz-back-link">← Home</a>
+    </div>
+  </header>
+
+  <main class="quiz-layout">
+    <div class="quiz-panel top10-panel">
+      <p class="quiz-panel__label">Top 10 Challenge</p>
+      <h1 class="quiz-panel__title" id="challenge-title">Loading challenge…</h1>
+      <p class="quiz-panel__desc" id="challenge-desc"></p>
+
+      <div class="top10-lives" aria-live="polite">
+        Lives: <span id="lives-count">3</span>
+      </div>
+
+      <ol class="top10-slots" id="top10-slots">
+        <li class="top10-slot" data-rank="1"><span class="top10-slot__rank">1</span><span class="top10-slot__answer">—</span></li>
+        <li class="top10-slot" data-rank="2"><span class="top10-slot__rank">2</span><span class="top10-slot__answer">—</span></li>
+        <li class="top10-slot" data-rank="3"><span class="top10-slot__rank">3</span><span class="top10-slot__answer">—</span></li>
+        <li class="top10-slot" data-rank="4"><span class="top10-slot__rank">4</span><span class="top10-slot__answer">—</span></li>
+        <li class="top10-slot" data-rank="5"><span class="top10-slot__rank">5</span><span class="top10-slot__answer">—</span></li>
+        <li class="top10-slot" data-rank="6"><span class="top10-slot__rank">6</span><span class="top10-slot__answer">—</span></li>
+        <li class="top10-slot" data-rank="7"><span class="top10-slot__rank">7</span><span class="top10-slot__answer">—</span></li>
+        <li class="top10-slot" data-rank="8"><span class="top10-slot__rank">8</span><span class="top10-slot__answer">—</span></li>
+        <li class="top10-slot" data-rank="9"><span class="top10-slot__rank">9</span><span class="top10-slot__answer">—</span></li>
+        <li class="top10-slot" data-rank="10"><span class="top10-slot__rank">10</span><span class="top10-slot__answer">—</span></li>
+      </ol>
+
+      <form class="top10-form" id="top10-form">
+        <input type="text" id="top10-input" class="top10-input" placeholder="Enter a player name" autocomplete="off" aria-label="Your answer">
+        <button type="submit" class="btn btn--primary btn--lg top10-submit">Submit</button>
+      </form>
+
+      <p id="top10-feedback" class="quiz-feedback" hidden></p>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+  <script src="top-10-challenge.js"></script>
+</body>
+</html>

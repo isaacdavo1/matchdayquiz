@@ -1,0 +1,79 @@
+{
+  "challenges": [
+    {
+      "id": "pl-2425-top-scorers",
+      "title": "Premier League 2024/25 Top Goalscorers",
+      "description": "Name the top 10 goal scorers from the 2024/25 Premier League season. You have 3 lives — every wrong guess costs one.",
+      "lives": 3,
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Mohamed Salah",
+          "goals": 29,
+          "aliases": ["salah", "mo salah", "mohamed salah"]
+        },
+        {
+          "rank": 2,
+          "name": "Alexander Isak",
+          "goals": 23,
+          "aliases": ["isak", "alexander isak"]
+        },
+        {
+          "rank": 3,
+          "name": "Erling Haaland",
+          "goals": 22,
+          "aliases": ["haaland", "erling haaland"]
+        },
+        {
+          "rank": 4,
+          "name": "Bryan Mbeumo",
+          "goals": 20,
+          "aliases": ["mbeumo", "bryan mbeumo"]
+        },
+        {
+          "rank": 5,
+          "name": "Chris Wood",
+          "goals": 20,
+          "aliases": ["wood", "chris wood"]
+        },
+        {
+          "rank": 6,
+          "name": "Yoane Wissa",
+          "goals": 19,
+          "aliases": ["wissa", "yoane wissa"]
+        },
+        {
+          "rank": 7,
+          "name": "Ollie Watkins",
+          "goals": 16,
+          "aliases": ["watkins", "ollie watkins", "oliver watkins"]
+        },
+        {
+          "rank": 8,
+          "name": "Matheus Cunha",
+          "goals": 15,
+          "aliases": ["cunha", "matheus cunha"]
+        },
+        {
+          "rank": 9,
+          "name": "Cole Palmer",
+          "goals": 15,
+          "aliases": ["palmer", "cole palmer"]
+        },
+        {
+          "rank": 10,
+          "name": "Jørgen Strand Larsen",
+          "goals": 14,
+          "aliases": [
+            "jorgen strand larsen",
+            "strand larsen",
+            "larsen",
+            "jean-philippe mateta",
+            "mateta",
+            "jp mateta"
+          ]
+        }
+      ]
+    }
+  ]
+}
