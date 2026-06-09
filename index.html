@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Football Quiz UK — Test your knowledge of English football with thousands of questions on the Premier League, Championship, FA Cup, and more.">
+  <meta name="theme-color" content="#0a0f1a">
+  <title>Football Quiz UK — Test Your Football Knowledge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg-pattern" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--hero" aria-hidden="true"></div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">
+        <span class="logo__icon" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M16 4L20 12L16 16L12 12L16 4Z" fill="currentColor" opacity="0.9"/>
+            <path d="M4 16L12 12L16 16L12 20L4 16Z" fill="currentColor" opacity="0.6"/>
+            <path d="M16 28L12 20L16 16L20 20L16 28Z" fill="currentColor" opacity="0.9"/>
+            <path d="M28 16L20 20L16 16L20 12L28 16Z" fill="currentColor" opacity="0.6"/>
+          </svg>
+        </span>
+        <span class="logo__text">Football Quiz UK</span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#features">Features</a>
+        <a href="#categories">Categories</a>
+        <a href="quizzes.html">Quizzes</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="waitlist-dropdown header__cta">
+        <button type="button" class="btn btn--sm btn--primary waitlist-dropdown__trigger" aria-expanded="false" aria-controls="header-waitlist-panel">
+          Join Waitlist
+        </button>
+        <div class="waitlist-dropdown__panel" id="header-waitlist-panel">
+          <p class="waitlist-dropdown__title">Get launch updates</p>
+          <form class="waitlist-dropdown__form" action="#" method="post">
+            <input type="email" name="email" placeholder="Enter your email" required aria-label="Email address">
+            <button type="submit" class="btn btn--primary btn--sm">Join the Waiting List</button>
+          </form>
+        </div>
+      </div>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-nav" id="mobile-nav" hidden>
+      <a href="#features">Features</a>
+      <a href="#categories">Categories</a>
+      <a href="quizzes.html">Quizzes</a>
+      <a href="#faq">FAQ</a>
+      <a href="#waitlist" class="btn btn--primary">Join Waitlist</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <div class="badge animate-in">
+            <span class="badge__dot"></span>
+            Coming Soon to iOS
+          </div>
+          <h1 class="hero__title animate-in animate-in--delay-1">
+            Test Your <span class="text-gradient">Football Knowledge</span>
+          </h1>
+          <p class="hero__subtitle animate-in animate-in--delay-2">
+            Thousands of questions covering English football history, clubs, players, records and iconic moments.
+          </p>
+          <form class="waitlist-form animate-in animate-in--delay-3" id="waitlist" action="#" method="post">
+            <div class="waitlist-form__row">
+              <input type="email" name="email" placeholder="Enter your email" required aria-label="Email address">
+              <button type="submit" class="btn btn--primary btn--lg">Join the Waiting List</button>
+            </div>
+            <p class="waitlist-form__note">Be first to know when we launch. No spam, ever.</p>
+          </form>
+          <div class="hero__stats animate-in animate-in--delay-4">
+            <div class="stat">
+              <strong>5,000+</strong>
+              <span>Questions</span>
+            </div>
+            <div class="stat">
+              <strong>6</strong>
+              <span>Categories</span>
+            </div>
+            <div class="stat">
+              <strong>4</strong>
+              <span>Difficulty Levels</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero__mockup animate-in animate-in--delay-2">
+          <div class="phone">
+            <div class="phone__frame">
+              <div class="phone__notch"></div>
+              <div class="phone__screen">
+                <div class="app-preview">
+                  <div class="app-preview__header">
+                    <span class="app-preview__greeting">Good luck!</span>
+                    <span class="app-preview__score">Score: 850</span>
+                  </div>
+                  <div class="app-preview__progress">
+                    <div class="app-preview__progress-bar" style="width: 60%"></div>
+                  </div>
+                  <p class="app-preview__label">Question 6 of 10</p>
+                  <h3 class="app-preview__question">Which club won the first Premier League title in 1992–93?</h3>
+                  <ul class="app-preview__options">
+                    <li class="app-preview__option app-preview__option--selected">Manchester United</li>
+                    <li class="app-preview__option">Blackburn Rovers</li>
+                    <li class="app-preview__option">Arsenal</li>
+                    <li class="app-preview__option">Leeds United</li>
+                  </ul>
+                  <div class="app-preview__timer">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    0:24
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="phone__glow" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Features</span>
+          <h2>Everything You Need to Become a Football Expert</h2>
+          <p>Built for fans who love stats, history, and a bit of friendly competition.</p>
+        </div>
+        <div class="features-grid">
+          <article class="feature-card">
+            <div class="feature-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+            </div>
+            <h3>Daily Challenges</h3>
+            <p>Fresh questions every day to keep your streak alive and your knowledge sharp.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4"/><path d="M9 9v.01M9 12v.01M9 15v.01M9 18v.01"/></svg>
+            </div>
+            <h3>Club-Specific Quizzes</h3>
+            <p>Deep dives into your favourite clubs — from founding years to legendary line-ups.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 21h8M12 17v4M7 4h10l1 7H6L7 4zM6 11v2a6 6 0 0012 0v-2"/></svg>
+            </div>
+            <h3>Leaderboards</h3>
+            <p>Compete nationally and see where you rank among fellow football fanatics.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19h16M6 16V8M10 16V5M14 16v-7M18 16v-4"/></svg>
+            </div>
+            <h3>Multiple Difficulty Levels</h3>
+            <p>From casual fan to pub quiz champion — pick the level that suits you.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 8v4l3 3M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/><path d="M3 12h2M19 12h2M12 3v2M12 19v2"/></svg>
+            </div>
+            <h3>Football History Questions</h3>
+            <p>Explore decades of English football — iconic goals, transfers, and records.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </div>
+            <h3>Track Your Progress</h3>
+            <p>Detailed stats on accuracy, categories mastered, and personal bests.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Play Quiz CTA -->
+    <section class="section home-quiz-cta" id="play-quiz">
+      <div class="container">
+        <div class="home-quiz-cta__card">
+          <div class="home-quiz-cta__content">
+            <span class="section-label">Play Now</span>
+            <h2>Try a Season Quiz</h2>
+            <p>Test your knowledge on the 2024/25 and 2025/26 Premier League campaigns. Pick a season, answer 10 questions, and see how you score.</p>
+          </div>
+          <a href="quizzes.html" class="btn btn--primary btn--xl home-quiz-cta__btn">Play Season Quizzes</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">How It Works</span>
+          <h2>Three Steps to Glory</h2>
+          <p>Simple, addictive, and designed for football fans on the go.</p>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <div class="step__number">1</div>
+            <div class="step__content">
+              <h3>Choose a Category</h3>
+              <p>Pick from Premier League, FA Cup, England, and more — or try a mixed challenge.</p>
+            </div>
+          </div>
+          <div class="step-connector" aria-hidden="true"></div>
+          <div class="step">
+            <div class="step__number">2</div>
+            <div class="step__content">
+              <h3>Answer Quiz Questions</h3>
+              <p>Race against the clock, earn points for speed and accuracy, and build your streak.</p>
+            </div>
+          </div>
+          <div class="step-connector" aria-hidden="true"></div>
+          <div class="step">
+            <div class="step__number">3</div>
+            <div class="step__content">
+              <h3>Climb the Leaderboard</h3>
+              <p>Beat your personal best, challenge friends, and rise through the national rankings.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="section" id="categories">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Quiz Categories</span>
+          <h2>Every Corner of English Football</h2>
+          <p>Six dedicated categories covering the leagues, cups, and legends you love.</p>
+        </div>
+        <div class="categories-grid">
+          <a href="quizzes.html" class="category-card category-card--pl">
+            <div class="category-card__icon">PL</div>
+            <h3>Premier League</h3>
+            <p>Title races, top scorers, and modern-era classics.</p>
+            <span class="category-card__count">2 season quizzes →</span>
+          </a>
+          <article class="category-card category-card--ch">
+            <div class="category-card__icon">CH</div>
+            <h3>Championship</h3>
+            <p>Promotion battles and lower-league legends.</p>
+            <span class="category-card__count">800+ questions</span>
+          </article>
+          <article class="category-card category-card--fac">
+            <div class="category-card__icon">FA</div>
+            <h3>FA Cup</h3>
+            <p>Giant killings, Wembley finals, and cup magic.</p>
+            <span class="category-card__count">600+ questions</span>
+          </article>
+          <article class="category-card category-card--eng">
+            <div class="category-card__icon">🏴</div>
+            <h3>England National Team</h3>
+            <p>World Cups, Euros, and Three Lions history.</p>
+            <span class="category-card__count">700+ questions</span>
+          </article>
+          <article class="category-card category-card--leg">
+            <div class="category-card__icon">★</div>
+            <h3>Football Legends</h3>
+            <p>Iconic players who defined English football.</p>
+            <span class="category-card__count">900+ questions</span>
+          </article>
+          <article class="category-card category-card--hist">
+            <div class="category-card__icon">📜</div>
+            <h3>Football History</h3>
+            <p>From Victorian origins to the modern game.</p>
+            <span class="category-card__count">800+ questions</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Reviews</span>
+          <h2>Loved by Football Fans</h2>
+          <p>Early testers can't get enough of the daily challenges.</p>
+        </div>
+        <div class="testimonials-grid">
+          <article class="testimonial-card">
+            <div class="stars" aria-label="5 out of 5 stars">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <blockquote>"Finally a quiz app that goes beyond just the Premier League. The Championship questions are brilliant — proper niche knowledge!"</blockquote>
+            <footer>
+              <div class="testimonial-card__avatar">JM</div>
+              <div>
+                <cite>James M.</cite>
+                <span>Leeds, West Yorkshire</span>
+              </div>
+            </footer>
+          </article>
+          <article class="testimonial-card">
+            <div class="stars" aria-label="5 out of 5 stars">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <blockquote>"The daily challenge is my morning ritual now. Leaderboards make it competitive without being toxic. Top app."</blockquote>
+            <footer>
+              <div class="testimonial-card__avatar">SK</div>
+              <div>
+                <cite>Sarah K.</cite>
+                <span>Manchester</span>
+              </div>
+            </footer>
+          </article>
+          <article class="testimonial-card">
+            <div class="stars" aria-label="5 out of 5 stars">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <blockquote>"Used it with mates at the pub — the history category had us arguing for hours. Can't wait for the full release."</blockquote>
+            <footer>
+              <div class="testimonial-card__avatar">DT</div>
+              <div>
+                <cite>David T.</cite>
+                <span>London</span>
+              </div>
+            </footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Leaderboard Preview -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Leaderboard</span>
+          <h2>See Where You Rank</h2>
+          <p>Compete with fans across the UK and climb to the top.</p>
+        </div>
+        <div class="leaderboard-card">
+          <div class="leaderboard-card__header">
+            <h3>Weekly Top Scorers</h3>
+            <span class="leaderboard-card__badge">Live</span>
+          </div>
+          <ol class="leaderboard-list">
+            <li class="leaderboard-item leaderboard-item--gold">
+              <span class="leaderboard-item__rank">1</span>
+              <span class="leaderboard-item__avatar">RF</span>
+              <span class="leaderboard-item__name">RedDevil_Fan92</span>
+              <span class="leaderboard-item__score">12,450</span>
+            </li>
+            <li class="leaderboard-item leaderboard-item--silver">
+              <span class="leaderboard-item__rank">2</span>
+              <span class="leaderboard-item__avatar">KT</span>
+              <span class="leaderboard-item__name">KopTriviaKing</span>
+              <span class="leaderboard-item__score">11,890</span>
+            </li>
+            <li class="leaderboard-item leaderboard-item--bronze">
+              <span class="leaderboard-item__rank">3</span>
+              <span class="leaderboard-item__avatar">GC</span>
+              <span class="leaderboard-item__name">GunnersChampion</span>
+              <span class="leaderboard-item__score">11,320</span>
+            </li>
+            <li class="leaderboard-item">
+              <span class="leaderboard-item__rank">4</span>
+              <span class="leaderboard-item__avatar">BH</span>
+              <span class="leaderboard-item__name">BlueHorizon</span>
+              <span class="leaderboard-item__score">10,775</span>
+            </li>
+            <li class="leaderboard-item">
+              <span class="leaderboard-item__rank">5</span>
+              <span class="leaderboard-item__avatar">YT</span>
+              <span class="leaderboard-item__name">YellowTribune</span>
+              <span class="leaderboard-item__score">10,210</span>
+            </li>
+          </ol>
+          <p class="leaderboard-card__you">Your rank: <strong>#847</strong> · Score: <strong>3,420</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--alt" id="faq">
+      <div class="container container--narrow">
+        <div class="section-header">
+          <span class="section-label">FAQ</span>
+          <h2>Common Questions</h2>
+          <p>Everything you need to know before launch.</p>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>Is the app free?</summary>
+            <p>Yes! Football Quiz UK is free to download with thousands of questions available at no cost. Optional premium features unlock advanced stats and exclusive quiz packs.</p>
+          </details>
+          <details class="faq-item">
+            <summary>How many questions are included?</summary>
+            <p>Over 5,000 questions at launch across six categories, with new questions added every week. Daily challenges feature fresh content so you'll never run out.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Can I compete with friends?</summary>
+            <p>Absolutely. Challenge friends directly, share your scores, and compare rankings on private and global leaderboards. Perfect for pub quiz bragging rights.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Are new quizzes added regularly?</summary>
+            <p>We add new questions weekly, plus seasonal specials for major tournaments, transfer windows, and historic anniversaries throughout the football calendar.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section cta-section">
+      <div class="container">
+        <div class="cta-card">
+          <div class="cta-card__glow" aria-hidden="true"></div>
+          <h2>Ready to Prove You're a Football Expert?</h2>
+          <p>Join thousands of fans on the waiting list and be first to download when we hit the App Store.</p>
+          <a href="#waitlist" class="btn btn--primary btn--xl">Download Soon</a>
+          <div class="app-store-badge">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            <div>
+              <span>Coming to the</span>
+              <strong>App Store</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="logo__text">Football Quiz UK</span>
+        <p>The ultimate English football trivia app for iOS.</p>
+      </div>
+      <div class="footer__links">
+        <a href="#features">Features</a>
+        <a href="#categories">Categories</a>
+        <a href="quizzes.html">Quizzes</a>
+        <a href="#faq">FAQ</a>
+        <a href="#waitlist">Waitlist</a>
+      </div>
+      <p class="footer__copy">&copy; 2026 Football Quiz UK. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden>
+    You're on the list! We'll be in touch soon.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

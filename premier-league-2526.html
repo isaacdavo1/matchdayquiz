@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Test your knowledge of the 2025/26 Premier League season — table, results, relegation and records.">
+  <meta name="theme-color" content="#0a0f1a">
+  <title>2025/26 Premier League Quiz — Football Quiz UK</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-quiz">
+  <div class="bg-pattern" aria-hidden="true"></div>
+
+  <header class="header header--minimal">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">
+        <span class="logo__icon" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M16 4L20 12L16 16L12 12L16 4Z" fill="currentColor" opacity="0.9"/>
+            <path d="M4 16L12 12L16 16L12 20L4 16Z" fill="currentColor" opacity="0.6"/>
+            <path d="M16 28L12 20L16 16L20 20L16 28Z" fill="currentColor" opacity="0.9"/>
+            <path d="M28 16L20 20L16 16L20 12L28 16Z" fill="currentColor" opacity="0.6"/>
+          </svg>
+        </span>
+        <span class="logo__text">Football Quiz UK</span>
+      </a>
+      <a href="quizzes.html" class="quiz-back-link">← All Quizzes</a>
+    </div>
+  </header>
+
+  <main class="quiz-layout">
+    <p class="quiz-page-season">2025/26 Season Quiz</p>
+    <div id="quiz-app" class="quiz-panel">
+      <div id="quiz-start" class="quiz-view">
+        <p class="quiz-panel__label">Premier League</p>
+        <h1 class="quiz-panel__title">2025/26 Season Quiz</h1>
+        <p class="quiz-panel__desc">10 questions on the final table, relegation, and key moments.</p>
+        <button type="button" id="quiz-start-btn" class="btn btn--primary btn--lg quiz-panel__cta">Start Quiz</button>
+      </div>
+
+      <div id="quiz-play" class="quiz-view" hidden>
+        <div class="quiz-status">
+          <span id="quiz-progress-label">1 / 10</span>
+          <span id="quiz-season-tag" class="quiz-season-tag"></span>
+          <span id="quiz-score-live">0 pts</span>
+        </div>
+        <div class="quiz-progress" aria-hidden="true">
+          <div id="quiz-progress-bar" class="quiz-progress__bar"></div>
+        </div>
+        <h2 id="quiz-question" class="quiz-panel__question"></h2>
+        <div id="quiz-options" class="quiz-options"></div>
+        <p id="quiz-feedback" class="quiz-feedback" hidden></p>
+        <button type="button" id="quiz-next-btn" class="btn btn--primary quiz-panel__cta" hidden>Continue</button>
+      </div>
+
+      <div id="quiz-results" class="quiz-view" hidden>
+        <p class="quiz-panel__label">2025/26 · Quiz complete</p>
+        <p id="quiz-final-score" class="quiz-panel__score"></p>
+        <p id="quiz-final-message" class="quiz-panel__desc"></p>
+        <p id="quiz-final-breakdown" class="quiz-panel__meta"></p>
+        <div class="quiz-panel__actions">
+          <button type="button" id="quiz-retry-btn" class="btn btn--primary btn--lg">Try Again</button>
+          <a href="quizzes.html" class="btn btn--outline btn--lg">All Quizzes</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+  <script src="data/pl-2526-quiz.js"></script>
+  <script src="quiz.js"></script>
+</body>
+</html>
