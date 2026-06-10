@@ -74,6 +74,74 @@
           ]
         }
       ]
+    },
+    {
+      "id": "pl-2526-top-scorers",
+      "title": "Premier League 2025/26 Top Goalscorers",
+      "description": "Name the top 10 goal scorers from the 2025/26 Premier League season. You have 3 lives — every wrong guess costs one.",
+      "lives": 3,
+      "answers": [
+        {
+          "rank": 1,
+          "name": "Erling Haaland",
+          "goals": 27,
+          "aliases": ["haaland", "erling haaland"]
+        },
+        {
+          "rank": 2,
+          "name": "Igor Thiago",
+          "goals": 22,
+          "aliases": ["igor thiago", "thiago"]
+        },
+        {
+          "rank": 3,
+          "name": "Antoine Semenyo",
+          "goals": 17,
+          "aliases": ["semenyo", "antoine semenyo"]
+        },
+        {
+          "rank": 4,
+          "name": "Ollie Watkins",
+          "goals": 16,
+          "aliases": ["watkins", "ollie watkins", "oliver watkins"]
+        },
+        {
+          "rank": 5,
+          "name": "Morgan Gibbs-White",
+          "goals": 15,
+          "aliases": ["gibbs-white", "gibbs white", "morgan gibbs-white"]
+        },
+        {
+          "rank": 6,
+          "name": "João Pedro",
+          "goals": 15,
+          "aliases": ["joao pedro", "joão pedro"]
+        },
+        {
+          "rank": 7,
+          "name": "Dominic Calvert-Lewin",
+          "goals": 14,
+          "aliases": ["calvert-lewin", "calvert lewin", "dcl", "dominic calvert-lewin"]
+        },
+        {
+          "rank": 8,
+          "name": "Viktor Gyökeres",
+          "goals": 14,
+          "aliases": ["gyokeres", "viktor gyokeres", "gyökeres"]
+        },
+        {
+          "rank": 9,
+          "name": "Eli Junior Kroupi",
+          "goals": 13,
+          "aliases": ["kroupi", "eli junior kroupi", "eli kroupi"]
+        },
+        {
+          "rank": 10,
+          "name": "Danny Welbeck",
+          "goals": 13,
+          "aliases": ["welbeck", "danny welbeck"]
+        }
+      ]
     }
   ]
 }
